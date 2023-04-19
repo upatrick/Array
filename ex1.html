@@ -146,20 +146,16 @@
                 </style>
             </head>
             <body>
-                <div class="inputBox">
-                    <input type="text" required="required" id="a" />
-                    <span>Side a</span>
-                </div>
                 <div class="inputBox" id="inner" style="color: azure;"></div>
                 <button onclick="percorrer()" style="--clr: #1e9bff">
                     <span>Go through</span><i></i>
                 </button>
                 <script>
                     function percorrer() {
-                        let nomes = ["patrick", "pablo", "pietro", "douglas"];
+                        let nomes = ["Patrick", "Pablo", "Pietro", "Douglas"];
 
                         for(let i = 0; i < nomes.length; i++) {
-                            console.log(nomes[i])
+                            inner.innerHTML += `<h3>${nomes[i]}`
                         }
                     }
                 </script>
